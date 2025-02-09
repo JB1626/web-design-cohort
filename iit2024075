@@ -1,0 +1,29 @@
+//IIT2024075
+//Use of different functions
+
+function sumof2numbers(x, y){
+    return x+y;
+}
+let x=9;
+let y=6;
+sumof2numbers(x,y);
+
+
+const add = (a, b) => a+b;
+console.log(add(2,4));
+
+
+(function () {
+console.log("Hello World");
+})
+();
+
+
+function outer(a) {
+    function inner(b) {
+        return a + b;
+    }
+        return inner;
+}
+const addTen = outer(10);
+console.log(addTen(5));
